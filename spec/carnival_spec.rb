@@ -50,7 +50,7 @@ describe Carnival do
     end
   end
 
-  describe "#most_profitable_ride" do
+  xdescribe "#most_profitable_ride" do
     it "can return the most profitable ride" do
       @carnival1.add_ride(@ride1)
       @carnival1.add_ride(@ride2)

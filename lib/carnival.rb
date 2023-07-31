@@ -15,4 +15,8 @@ class Carnival
   #     a << ride.total_revenue / ride.admission_fee
   #   end
   # end
+
+  def total_revenue
+    @rides.map {|ride| ride.total_revenue}.sum
+  end
 end
