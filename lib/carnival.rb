@@ -9,4 +9,10 @@ class Carnival
   def add_ride(ride)
     @rides << ride
   end
+
+  # def most_popular_ride
+  #   @rides.each_with_object([]) do |ride, a|
+  #     a << ride.total_revenue / ride.admission_fee
+  #   end
+  # end
 end
