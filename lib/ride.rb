@@ -13,7 +13,7 @@ class Ride
   def board_rider(rider)
     if rider.spending_money >= @admission_fee
       @rider_log[rider] += 1
-      rider.pay_for_ride
+      rider.pay_for_ride(@admission_fee)
       @total_revenue += @admission_fee
     end
   end
