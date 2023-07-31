@@ -10,12 +10,6 @@ class Carnival
     @rides << ride
   end
 
-  # def most_popular_ride
-  #   @rides.each_with_object([]) do |ride, a|
-  #     a << ride.total_revenue / ride.admission_fee
-  #   end
-  # end
-
   def total_revenue
     @rides.map {|ride| ride.total_revenue}.sum
   end
